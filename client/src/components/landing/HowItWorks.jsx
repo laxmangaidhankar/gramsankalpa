@@ -3,12 +3,53 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Search, Satellite, Activity, Brain, LayoutDashboard } from 'lucide-react';
 
+
 const steps = [
-  { id: '01', icon: Search, titleKey: 'howItWorks.step1.title', titleDefault: 'Search Village', descKey: 'howItWorks.step1.desc', descDefault: 'Find any village in India instantly using our comprehensive geographic database.' },
-  { id: '02', icon: Satellite, titleKey: 'howItWorks.step2.title', titleDefault: 'Fetch Satellite Data', descKey: 'howItWorks.step2.desc', descDefault: 'Pull live GEE metrics including NDVI, NDWI, and LST on the fly.' },
-  { id: '03', icon: Activity, titleKey: 'howItWorks.step3.title', titleDefault: 'Environmental Analysis', descKey: 'howItWorks.step3.desc', descDefault: 'Calculate precise health indices and identify early stress indicators.' },
-  { id: '04', icon: Brain, titleKey: 'howItWorks.step4.title', titleDefault: 'AI Processing', descKey: 'howItWorks.step4.desc', descDefault: 'Generate actionable insights and automated mitigation strategies.' },
-  { id: '05', icon: LayoutDashboard, titleKey: 'howItWorks.step5.title', titleDefault: 'Interactive Dashboard', descKey: 'howItWorks.step5.desc', descDefault: 'Visualize data clearly and export comprehensive PDF reports.' },
+  {
+    id: '01',
+    icon: Search,
+    titleKey: 'howItWorks.step1.title',
+    titleDefault: 'Select Your Location',
+    descKey: 'howItWorks.step1.desc',
+    descDefault:
+      'Choose a village or farming region to build a localized view of its weather and agricultural conditions.'
+  },
+  {
+    id: '02',
+    icon: Activity,
+    titleKey: 'howItWorks.step2.title',
+    titleDefault: 'Understand Local Conditions',
+    descKey: 'howItWorks.step2.desc',
+    descDefault:
+      'Combine local weather with rainfall, temperature, vegetation, and other available environmental signals.'
+  },
+  {
+    id: '03',
+    icon: Satellite,
+    titleKey: 'howItWorks.step3.title',
+    titleDefault: 'Analyze the Field',
+    descKey: 'howItWorks.step3.desc',
+    descDefault:
+      'Use satellite and geospatial indicators such as NDVI, NDWI, and land surface temperature to understand field conditions.'
+  },
+  {
+    id: '04',
+    icon: Brain,
+    titleKey: 'howItWorks.step4.title',
+    titleDefault: 'Generate AI Guidance',
+    descKey: 'howItWorks.step4.desc',
+    descDefault:
+      'AI combines the available signals to generate practical guidance for crops, weather risks, and upcoming farm activities.'
+  },
+  {
+    id: '05',
+    icon: LayoutDashboard,
+    titleKey: 'howItWorks.step5.title',
+    titleDefault: 'Take Action',
+    descKey: 'howItWorks.step5.desc',
+    descDefault:
+      'View the recommendations through the dashboard and generate a clear report for planning and decision-making.'
+  }
 ];
 
 export const HowItWorks = () => {
