@@ -85,21 +85,21 @@ export const Features = () => {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
               className="bg-surface-slate border border-surface-border rounded-2xl p-6 relative overflow-hidden group hover:border-brand-mint/50 hover:shadow-lg transition-all"
             >
-              <div 
-                className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:opacity-20 transition-opacity"
+              <div
+                className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:opacity-20 transition-opacity"
                 style={{ backgroundImage: `linear-gradient(to bottom right, ${feature.color}, transparent)` }}
               />
-              
-              <div 
+
+              <div
                 className="w-12 h-12 rounded-xl border border-surface-border bg-surface-elevated flex items-center justify-center mb-6"
               >
                 <feature.icon className="w-6 h-6" style={{ color: feature.color }} />
               </div>
-              
+
               <h3 className="text-heading-md text-text-primary mb-3">
                 {t(feature.titleKey, feature.titleDefault)}
               </h3>
-              
+
               <p className="text-body text-text-secondary">
                 {t(feature.descKey, feature.descDefault)}
               </p>

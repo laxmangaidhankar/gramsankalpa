@@ -18,12 +18,11 @@ export const LandingNavbar = () => {
   }, []);
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
-        scrolled 
-          ? 'bg-canvas-black/80 backdrop-blur-md border-b border-surface-border py-3 shadow-sm' 
+    <nav
+      className={`fixed top-0 left-0 right-0 z-100 transition-all duration-300 ${scrolled
+          ? 'bg-canvas-black/80 backdrop-blur-md border-b border-surface-border py-3 shadow-sm'
           : 'bg-transparent py-5'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2 md:gap-3">
@@ -39,7 +38,7 @@ export const LandingNavbar = () => {
 
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
-          <button 
+          <button
             onClick={toggleTheme}
             className="text-text-muted hover:text-brand-mint transition-colors p-2 rounded-full hover:bg-surface-elevated"
             aria-label="Toggle theme"

@@ -68,13 +68,13 @@ export const HowItWorks = () => {
         </div>
 
         <div className="relative mt-12">
-          <div className="hidden md:block absolute top-8 left-0 w-full h-[2px] bg-surface-border">
-            <motion.div 
+          <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-surface-border">
+            <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '100%' }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="h-full bg-gradient-to-r from-brand-mint via-brand-blue to-brand-violet"
+              className="h-full bg-linear-to-r from-brand-mint via-brand-blue to-brand-violet"
             />
           </div>
 

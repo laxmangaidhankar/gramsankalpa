@@ -9,13 +9,13 @@ export const CTA = () => {
 
   return (
     <section className="py-24 px-6 bg-canvas-black">
-      <div className="max-w-5xl mx-auto relative rounded-[2rem] overflow-hidden">
+      <div className="max-w-5xl mx-auto relative rounded-4xl overflow-hidden">
 
         {/* Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-brand-violet/20 to-brand-mint/20 opacity-50 blur-3xl" />
+        <div className="absolute inset-0 bg-linear-to-br from-brand-blue/20 via-brand-violet/20 to-brand-mint/20 opacity-50 blur-3xl" />
 
         {/* Card */}
-        <div className="absolute inset-0 bg-surface-slate/80 backdrop-blur-sm border border-surface-border rounded-[2rem]" />
+        <div className="absolute inset-0 bg-surface-slate/80 backdrop-blur-sm border border-surface-border rounded-4xl" />
 
         {/* Content */}
         <div className="relative z-10 px-8 py-16 md:py-24 flex flex-col items-center text-center">
