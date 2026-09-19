@@ -1,0 +1,197 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "village": "Village",
+    "map": "Map",
+    "ai_assistant": "AI Assistant"
+  },
+
+  "hero": {
+    "live_monitoring": "WEATHER → INTELLIGENCE → FARM ACTION",
+    "headline": "From Local Weather to Better Farm Decisions",
+    "description": "GramSankalpa combines localized weather, satellite insights, field indicators, and AI-powered crop guidance to help farmers plan sowing, irrigation, spraying, harvesting, and other farm activities.",
+    "watch_demo": "Watch Demo"
+  },
+
+  "landing": {
+    "features": "Core Capabilities",
+    "technology": "Technology",
+    "howItWorks": "How It Works",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "nav": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "login": "Dashboard Login"
+    }
+  },
+
+  "features": {
+    "headline": "From Data to Farm Decisions",
+    "subheadline": "Weather, satellite intelligence, and AI work together to turn complex agricultural data into practical decisions.",
+    "item1": {
+      "title": "Field Intelligence",
+      "desc": "Use satellite and geospatial data to understand vegetation health, water conditions, and changes across local farming areas."
+    },
+    "item2": {
+      "title": "Crop Health Signals",
+      "desc": "Track NDVI, NDWI, land surface temperature, rainfall, and vegetation trends to understand changing crop and field conditions."
+    },
+    "item3": {
+      "title": "Weather Risk Alerts",
+      "desc": "Identify upcoming heat, heavy rainfall, dry spells, and other weather conditions that could affect farm operations."
+    },
+    "item4": {
+      "title": "AI Farm Recommendations",
+      "desc": "Turn weather, crop, and field information into practical recommendations for sowing, irrigation, spraying, and harvesting."
+    },
+    "item5": {
+      "title": "Season & Historical Insights",
+      "desc": "Compare historical weather and vegetation patterns to understand seasonal changes and support better farm planning."
+    },
+    "item6": {
+      "title": "Farmer-Ready Reports",
+      "desc": "Generate simple, actionable reports combining local weather, field indicators, crop guidance, and identified risks."
+    }
+  },
+
+  "howItWorks": {
+    "headline": "From Local Data to Farm Action",
+    "subheadline": "GramSankalpa brings together local weather, satellite signals, and AI to turn complex agricultural data into practical decisions.",
+
+    "step1": {
+      "title": "Select Your Location",
+      "desc": "Choose a village or farming region to build a localized view of its weather and agricultural conditions."
+    },
+
+    "step2": {
+      "title": "Understand Local Conditions",
+      "desc": "Combine local weather with rainfall, temperature, vegetation, and other available environmental signals."
+    },
+
+    "step3": {
+      "title": "Analyze the Field",
+      "desc": "Use satellite and geospatial indicators such as NDVI, NDWI, and land surface temperature to understand field conditions."
+    },
+
+    "step4": {
+      "title": "Generate AI Guidance",
+      "desc": "AI combines the available signals to generate practical guidance for crops, weather risks, and upcoming farm activities."
+    },
+
+    "step5": {
+      "title": "Take Action",
+      "desc": "View recommendations through the dashboard and generate a clear report for planning and decision-making."
+    }
+  },
+
+  "technology": {
+    "headline": "Technology Behind the Intelligence",
+    "subheadline": "Built with modern weather, geospatial, cloud, and AI technologies to transform agricultural data into useful farm insights."
+  },
+
+  "cta": {
+    "headline": "Turn Local Weather Into Better Farm Decisions",
+    "subheadline": "Explore GramSankalpa and bring weather intelligence, field insights, and AI-powered crop guidance together in one place.",
+    "learn_more": "Learn More"
+  },
+
+  "footer": {
+    "description": "AI-powered weather and crop intelligence platform for Indian farmers.",
+    "quick_links": "QUICK LINKS",
+    "legal": "LEGAL",
+    "documentation": "Documentation",
+    "privacy_policy": "Privacy Policy",
+    "github": "GitHub",
+    "copyright": "© {{year}} GramSankalpa. All rights reserved."
+  },
+
+  "dashboard": {
+    "regional_ndvi": "REGIONAL NDVI DISTRIBUTION",
+    "land_cover": "LAND COVER BREAKDOWN",
+    "climate_assessment": "CLIMATE & FARM ASSESSMENT",
+    "history_error": "Historical analysis temporarily unavailable — try refreshing.",
+    "overall_trajectory": "OVERALL TRAJECTORY",
+    "notable_changes": "NOTABLE CHANGES (2022-2026)",
+    "ndvi_trend": "NDVI TREND",
+    "surface_water_trend": "SURFACE WATER (HA)",
+    "village_report": "FARM & VILLAGE REPORT",
+    "include_ai": "Include AI Analysis",
+    "includes": "INCLUDES:",
+    "exec_summary": "Executive Summary",
+    "ai_narrative": "(AI Narrative)",
+    "auto_generated": "(Auto)",
+    "health_score": "Farm & Environmental Health Score",
+    "env_metrics": "Environmental Metrics",
+    "historical_trends": "Historical Trends (2022-2026)",
+    "ai_recs": "AI Farm Recommendations",
+    "methodology": "Methodology",
+    "generating": "GENERATING...",
+    "download_pdf": "DOWNLOAD PDF REPORT",
+    "export_json": "EXPORT JSON",
+    "export_csv": "EXPORT CSV",
+    "last_generated": "LAST GENERATED:",
+    "never": "NEVER",
+    "pdf_error": "Failed to generate PDF report.",
+    "json_error": "Failed to generate JSON export.",
+    "csv_error": "Failed to generate CSV export.",
+    "expected": "Expected",
+    "current_weather": "CURRENT WEATHER",
+    "weather_unavailable": "Weather unavailable",
+    "unavailable": "Unavailable",
+    "score_label": "SCORE",
+
+    "score": {
+      "water": "WATER SECURITY",
+      "vegetation": "VEGETATION HEALTH",
+      "climate": "CLIMATE STABILITY",
+      "flood": "FLOOD PREPAREDNESS",
+      "land": "LAND SUSTAINABILITY",
+      "pending": "Score data pending"
+    },
+
+    "trend": {
+      "improving": "improving",
+      "stable": "stable",
+      "declining": "declining"
+    }
+  },
+
+  "metrics": {
+    "ndvi_name": "NDVI",
+    "water_area_name": "Water Area"
+  },
+
+  "map": {
+    "base_map": "BASE MAP",
+    "overlays": "OVERLAYS",
+    "search_placeholder": "Search any village...",
+    "area": "Area",
+    "view_analysis": "VIEW ANALYSIS",
+
+    "layers": {
+      "dark": "Dark Matter",
+      "satellite": "Satellite",
+      "osm": "Street Map",
+      "ndvi": "NDVI Health",
+      "water": "Surface Water"
+    }
+  },
+
+  "chat": {
+    "title": "GRAMSANKALPA AI",
+    "empty_state": "Ask GramSankalpa AI about {{villageName}}'s weather, crops, and field conditions.",
+    "placeholder": "Ask about your farm..."
+  },
+
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "no_account": "Don't have an account?",
+    "has_account": "Already have an account?"
+  },
+
+  "errors": {
+    "summary_failed": "Failed to generate summary."
+  }
+}
