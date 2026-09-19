@@ -22,7 +22,7 @@ export const Hero = () => {
           >
             <div className="absolute inset-0 bg-linear-to-tr from-brand-mint/20 via-transparent to-brand-blue/10 mix-blend-overlay z-10 pointer-events-none transition-opacity group-hover:opacity-50"></div>
             <img
-              src=".\public\hero.png"
+              src=".\public\home.png"
               alt="GramSankalpa Weather & Crop Advisory Platform"
               className="w-full h-auto object-cover rounded-3xl transition-transform duration-700 group-hover:scale-[1.02]"
             />
