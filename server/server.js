@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
+
 const rateLimit = require("express-rate-limit");
 
-dotenv.config();
+const env = require('./config/env.js');
 
 const { connectDB } = require("./config/db.js");
 const { loadVillages } = require("./services/villageService.js");
@@ -21,8 +21,8 @@ const analysisRoutes = require("./routes/analysisRoutes.js");
 const historyRoutes = require("./routes/historyRoutes.js");
 
 const app = express();
-const PORT = process.env.PORT || 8000;
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:5173")
+const PORT = env.PORT;
+const allowedOrigins = (env.ALLOWED_ORIGINS)
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
@@ -79,7 +79,6 @@ async function startServer() {
   await loadVillages();
 
   app.listen(PORT, () => {
-    console.log(`=======================================================`);
     console.log(
       `GramSankalpa Server running on http://localhost:${PORT}`,
     );
