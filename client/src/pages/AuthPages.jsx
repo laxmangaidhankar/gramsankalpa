@@ -1,62 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import React from 'react';
 import { AuthLayout } from '../components/auth/AuthLayout';
 import { LoginForm } from '../components/auth/LoginForm';
-import { SignupForm } from '../components/auth/SignupForm';
-import { AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 export const AuthPage = () => {
-  const [searchParams] = useSearchParams();
-  const modeParam = searchParams.get('mode');
-  const [isLogin, setIsLogin] = useState(modeParam !== 'signup');
-  const { t } = useTranslation();
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLogin(modeParam !== 'signup');
-    }, 0);
-    return () => clearTimeout(timer);
-  }, [modeParam]);
-
   return (
     <AuthLayout>
-      <div className="flex flex-col items-center w-full">
-        <div className="bg-canvas-black border border-surface-border rounded-full p-1 mb-8 inline-flex relative w-full max-w-60">
-          <div
-            className="absolute top-1 bottom-1 w-[calc(50%-4px)] bg-surface-elevated rounded-full transition-transform duration-300 shadow-sm border border-surface-border"
-          ></div>
-          <button
-            className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
-            onClick={() => setIsLogin(true)}
-          >
-            {t('auth.login', 'Login')}
-          </button>
-          <button
-            className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${!isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
-            onClick={() => setIsLogin(false)}
-          >
-            {t('auth.signup', 'Sign Up')}
-          </button>
-        </div>
-
-        <div className="w-full relative min-h-100">
-          <AnimatePresence mode="wait">
-            {isLogin ? (
-              <LoginForm key="login" />
-            ) : (
-              <SignupForm key="signup" />
-            )}
-          </AnimatePresence>
-        </div>
+      <div className="w-full">
+        <LoginForm />
         <p className="text-body text-text-muted text-sm mt-8 text-center">
-          {isLogin ? t('auth.no_account', "Don't have an account?") : t('auth.has_account', "Already have an account?")}
-          <button
-            className="text-text-primary hover:text-brand-mint transition-colors ml-2 font-medium"
-            onClick={() => setIsLogin(!isLogin)}
-          >
-            {isLogin ? t('auth.signup', 'Sign up') : t('auth.login', 'Login')}
-          </button>
+          Your mobile number is used only for this local account session.
         </p>
       </div>
     </AuthLayout>
