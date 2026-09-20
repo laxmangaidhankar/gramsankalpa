@@ -39,6 +39,7 @@ app.include_router(health.router, prefix="/api/v1")
 app.include_router(ai.router, prefix="/api/v1")
 app.include_router(satellite.router, prefix="/api/v1")
 app.include_router(analysis.router, prefix="/api/v1")
+app.include_router(recommendations.router, prefix="/api/v1")
 
 
 @app.get("/")
