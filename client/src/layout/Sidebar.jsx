@@ -121,7 +121,7 @@ export const Sidebar = ({ isOpen, onClose }) => {
       <aside ref={sidebarRef} className={sidebarClasses}>
         {onClose && (
           <div className="flex justify-between items-center md:hidden p-4 border-b border-surface-border">
-            <span className="text-mono text-text-primary">{t('nav.ai_assistant', 'GRAMDRISHTI AI')}</span>
+            <span className="text-mono text-text-primary">{t('nav.ai_assistant', 'GRAMSANKALPA AI')}</span>
             <button onClick={onClose} className="text-text-muted"><X className="w-5 h-5" /></button>
           </div>
         )}
