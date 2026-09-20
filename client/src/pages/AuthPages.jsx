@@ -22,25 +22,25 @@ export const AuthPage = () => {
   return (
     <AuthLayout>
       <div className="flex flex-col items-center w-full">
-        <div className="bg-canvas-black border border-surface-border rounded-full p-1 mb-8 inline-flex relative w-full max-w-[240px]">
-           <div 
-             className="absolute top-1 bottom-1 w-[calc(50%-4px)] bg-surface-elevated rounded-full transition-transform duration-300 shadow-sm border border-surface-border"
-           ></div>
-           <button 
-             className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
-             onClick={() => setIsLogin(true)}
-           >
-             {t('auth.login', 'Login')}
-           </button>
-           <button 
-             className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${!isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
-             onClick={() => setIsLogin(false)}
-           >
-             {t('auth.signup', 'Sign Up')}
-           </button>
+        <div className="bg-canvas-black border border-surface-border rounded-full p-1 mb-8 inline-flex relative w-full max-w-60">
+          <div
+            className="absolute top-1 bottom-1 w-[calc(50%-4px)] bg-surface-elevated rounded-full transition-transform duration-300 shadow-sm border border-surface-border"
+          ></div>
+          <button
+            className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
+            onClick={() => setIsLogin(true)}
+          >
+            {t('auth.login', 'Login')}
+          </button>
+          <button
+            className={`flex-1 py-1.5 text-sm font-grotesk z-10 transition-colors ${!isLogin ? 'text-text-primary' : 'text-text-secondary'}`}
+            onClick={() => setIsLogin(false)}
+          >
+            {t('auth.signup', 'Sign Up')}
+          </button>
         </div>
 
-        <div className="w-full relative min-h-[400px]">
+        <div className="w-full relative min-h-100">
           <AnimatePresence mode="wait">
             {isLogin ? (
               <LoginForm key="login" />
@@ -49,15 +49,15 @@ export const AuthPage = () => {
             )}
           </AnimatePresence>
         </div>
-   <p className="text-body text-text-muted text-sm mt-8 text-center">
+        <p className="text-body text-text-muted text-sm mt-8 text-center">
           {isLogin ? t('auth.no_account', "Don't have an account?") : t('auth.has_account', "Already have an account?")}
-          <button 
+          <button
             className="text-text-primary hover:text-brand-mint transition-colors ml-2 font-medium"
             onClick={() => setIsLogin(!isLogin)}
           >
             {isLogin ? t('auth.signup', 'Sign up') : t('auth.login', 'Login')}
           </button>
-        </p> 
+        </p>
       </div>
     </AuthLayout>
   );
