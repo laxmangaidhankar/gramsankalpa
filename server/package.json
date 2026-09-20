@@ -1,0 +1,23 @@
+{
+  "name": "gramsankalpa-backend",
+  "version": "1.0.0",
+  "description": "GramSankalpa MERN Stack Backend - Localized Weather & Crop Recommendation Platform",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "ai:start": "python -m uvicorn main:app --host 127.0.0.1 --port 8001",
+    "ai:dev": "python -m uvicorn main:app --host 127.0.0.1 --port 8001 --reload"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "mongoose": "^8.9.5",
+    "pdfkit": "^0.16.0"
+  },
+  "devDependencies": {}
+}
