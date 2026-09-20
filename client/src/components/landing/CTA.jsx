@@ -45,7 +45,7 @@ export const CTA = () => {
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
-                to="/auth?mode=signup"
+                to="/auth"
                 className="flex items-center gap-2 bg-text-primary text-canvas-black px-8 py-4 rounded-button font-mono text-sm uppercase tracking-wider hover:bg-brand-mint transition-colors shadow-lg"
               >
                 Explore GramSankalpa

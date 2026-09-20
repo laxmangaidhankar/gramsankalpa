@@ -1,16 +1,20 @@
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 export const useAuth = create(
   persist(
     (set) => ({
       isAuthenticated: false,
       user: null,
-      login: (email) => set({ isAuthenticated: true, user: { name: email.split('@')[0], email } }),
+      login: (mobileNumber) =>
+        set({
+          isAuthenticated: true,
+          user: { name: `Farmer ${mobileNumber.slice(-4)}`, mobileNumber },
+        }),
       logout: () => set({ isAuthenticated: false, user: null }),
     }),
     {
-      name: 'gramdrishti-auth',
-    }
-  )
+      name: "gramsankalpa-auth",
+    },
+  ),
 );

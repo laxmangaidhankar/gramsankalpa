@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 const extractErrorMessage = async (blob, fallback) => {
   try {
     const text = await blob.text();
@@ -50,13 +50,13 @@ const downloadFile = async (url, filename, expectedType) => {
 };
 export const downloadPDF = async (villageId, year, includeAI) => {
   const url = `${apiBaseUrl}/api/v1/reports/${villageId}/pdf?year=${year}&include_ai=${includeAI}`;
-  await downloadFile(url, `GramDrishti_Report_${villageId}_${year}.pdf`, "application/pdf");
+  await downloadFile(url, `GramSankalpa_Report_${villageId}_${year}.pdf`, "application/pdf");
 };
 export const downloadJSON = async (villageId, year) => {
   const url = `${apiBaseUrl}/api/v1/reports/${villageId}/json?year=${year}`;
-  await downloadFile(url, `GramDrishti_Data_${villageId}_${year}.json`, "application/json");
+  await downloadFile(url, `GramSankalpa_Data_${villageId}_${year}.json`, "application/json");
 };
 export const downloadCSV = async (villageId) => {
   const url = `${apiBaseUrl}/api/v1/reports/${villageId}/csv`;
-  await downloadFile(url, `GramDrishti_History_${villageId}.csv`, "text/csv");
+  await downloadFile(url, `GramSankalpa_History_${villageId}.csv`, "text/csv");
 };
