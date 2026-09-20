@@ -156,7 +156,7 @@ async function searchVillages(query) {
         polygon_geojson: 1,
         limit: 5,
       },
-      headers: { "User-Agent": "GramDrishti-Farmer-Platform/1.0" },
+      headers: { "User-Agent": "GramSankalpa-Farmer-Platform/1.0" },
       timeout: 5000,
     });
 

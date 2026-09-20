@@ -53,17 +53,8 @@ export const MapContainer = React.memo(() => {
     setActiveLayers(active);
   }, [layers.activeSatelliteLayer, setActiveLayers]);
   const getTileUrl = () => {
-    switch (layers.activeBaseLayer) {
-      case "dark":
-        return theme === "light" ? "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" : "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
-      case "satellite":
-        return "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
-      case "osm":
-        return "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-      default:
-        return theme === "light" ? "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" : "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
-    }
-  };
+  return "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+};
   return <div className={`flex-1 relative bg-canvas-black border border-surface-border rounded-card m-2 overflow-hidden md:m-0 md:rounded-none md:border-0 md:border-t-0 ${layers.activeSatelliteLayer ? "cursor-crosshair" : ""}`}>
       <LeafletMap
     center={[20.5937, 78.9629]}
