@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '1000+', label: 'Villages' },
-  { value: '5+', label: 'Satellite Sources' },
+  { value: '10+', label: 'Villages' },
+  { value: '3+', label: 'Satellite Datasets' },
   { value: '10+', label: 'Environmental Indicators' },
-  { value: '24/7', label: 'AI Monitoring' },
+  { value: 'AI', label: 'Agricultural Insights' },
 ];
 
 export const Stats = () => {

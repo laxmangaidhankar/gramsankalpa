@@ -22,7 +22,7 @@ export const Hero = () => {
           >
             <div className="absolute inset-0 bg-linear-to-tr from-brand-mint/20 via-transparent to-brand-blue/10 mix-blend-overlay z-10 pointer-events-none transition-opacity group-hover:opacity-50"></div>
             <img
-              src=".\public\home.png"
+              src="home.png"
               alt="GramSankalpa Weather & Crop Advisory Platform"
               className="w-full h-auto object-cover rounded-3xl transition-transform duration-700 group-hover:scale-[1.02]"
             />
@@ -44,18 +44,15 @@ export const Hero = () => {
             </h1>
 
             <p className="text-body text-text-secondary text-lg md:text-xl max-w-xl">
-              Empowering farmers with real-time 7-day weather forecasts, micro-climate soil analysis, tailored crop sowing windows, and Google Gemini AI farming advice.
+              Empowering villages with localized weather, satellite insights, agricultural intelligence, and AI-powered recommendations for smarter decisions.
             </p>
 
-            <div className="grid grid-cols-2 gap-3 p-3 bg-surface-slate/40 border border-surface-border/60 rounded-xl text-xs font-mono">
+            <div className="grid grid-cols-1 gap-3 p-3 bg-surface-slate/40 border border-surface-border/60 rounded-xl text-xs font-mono">
               <div className="flex items-center gap-2 text-brand-mint">
-                <CloudSun className="w-4 h-4" />
-                <span>Know what the next 7 days mean for your field</span>
+                <CloudSun className="w-6 h-5" />
+                <span>Weather, Earth & AI for Better Decisions</span>
               </div>
-              <div className="flex items-center gap-2 text-brand-blue">
-                <Sprout className="w-4 h-4" />
-                <span>Actionable AI farm recommendations</span>
-              </div>
+              
             </div>
 
             <div className="flex flex-wrap items-center gap-4 mt-2">
